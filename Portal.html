@@ -1,0 +1,447 @@
+<!doctype html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 2. Custom Font Styles -->
+
+
+ 
+</head>
+<!--
+text-blue-400 text-blue-500 text-blue-600 text-blue-700 text-blue-800 text-blue-900
+text-gray-400 text-gray-500 text-gray-600 text-gray-700 text-gray-800 text-gray-900
+  text-gray-500 text-blue-600 text-green-500 text-yellow-500
+-->
+
+<body class="bg-white dark:bg-gray-800">
+
+  <div  id="home"></div>
+  <!-- Navigation -->
+  <nav class="navbar bg-white fixed top-0 left-0 w-full flex items-center justify-between p-8  z-50 shadow-2xl flex-wrap">
+    <div class="flex items-center space-x-4">
+  <!-- Replace logo with eye structure -->
+  <div id="eyes" class="absolute ">
+            <img id="anchor" src="1_border-removebg-preview.png" class="w-30">
+            <img class="eye absolute w-[46px] h-auto top-[28px] left-[3px]" src="HEY.png" alt="eye">
+            <img class="eye absolute top-7 left-[70px] w-[46px] h-auto" src="HEY.png" alt="eye">
+          </div>
+        <span class="text-4xl font-bold text-gray-700 ml-36">EngiPortal</span>
+      </div>
+
+
+    <ul id="unlist" class="flex items-center text-lg space-x-10 justify-between">
+        <li class=""><a href="#home" class="group relative flex items-center gap-1 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75L12 3l9 6.75M9 22V12h6v10" />
+                </svg>
+                Home
+                <span class="absolute left-0 top-8 h-0.5 bg-blue-500 dark:bg-gray-500 w-0 group-hover:w-full shadow-2xs transition-all duration-300 "></span>
+        </a></li>
+
+
+      <li><a href="#branches" class="group relative flex items-center gap-1 ">
+        <!-- Code Branch Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M6 4a2 2 0 100 4 2 2 0 000-4zm0 12a2 2 0 100 4 2 2 0 000-4zm12-8a2 2 0 100 4 2 2 0 000-4M6 8v8m0-4h10" />
+        </svg>
+        Branches
+        <span class="absolute left-0 top-8 h-0.5 bg-blue-500 dark:bg-gray-500 w-0 group-hover:w-full shadow-2xs transition-all duration-300 "></span>
+      </a></li>
+
+      <li><a href="#compare" class="group relative flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h4v11H3zM9 4h4v17H9zM15 14h4v7h-4z" />
+        </svg>
+        Compare
+        <span class="absolute left-0 top-8 h-0.5 bg-blue-500 dark:bg-gray-500 w-0 group-hover:w-full shadow-2xs transition-all duration-300 "></span>
+      </a></li>
+      <li><button id="guidance-btn" type="button" class="bg-blue-600 dark:bg-gray-500 flex hover:shadow-lg transition-transform transform shadow-md hover:-translate-y-1 text-white p-3 rounded flex-row cursor-pointer ">Get Guidance</button></li>
+      <!-- <span class="absolute left-0 bottom-0 h-1 bg-blue-500 w-0 group-hover:w-full shadow-2xs transition-all duration-500"></span> -->
+    </ul>
+    
+
+    <div id="toggle" class="toggle relative h-9 w-20 rounded-2xl bg-blue-600 dark:bg-gray-400 shadow-lg  ">
+      
+    </div>
+</nav>
+
+
+
+<!--HERO SECTION -->
+
+   <div>   
+<main class="container max-w-full h-fit bg-gradient-to-r from-blue-500 to-indigo-700 p-16 text-white mt-22 flex flex-col items-start gap-4 pt-20 px-40 dark:bg-none dark:bg-slate-900">
+<h1 class="text-5xl dark:text-gray-300 font-bold">Engineering Branches in India</h1>
+<p class="text-lg   mr-75">Discover the perfect engineering path for your future career. Explore detailed information about various engineering disciplines, their scope, and career prospects.</p>
+
+<div class="flex gap-10 mt-10"> 
+    <button href="#branches" class="bg-white dark:bg-gray-800 dark:text-amber-50 transition-transform transform hover:-translate-y-1 hover:shadow-lg text-blue-500 p-4 rounded-md border-1 shadow-md hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
+        <!-- Code Branch Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M6 4a2 2 0 100 4 2 2 0 000-4zm0 12a2 2 0 100 4 2 2 0 000-4zm12-8a2 2 0 100 4 2 2 0 000-4M6 8v8m0-4h10" />
+        </svg>
+        <a href="#branches">
+          
+          Explore Branches
+        </a>
+    </button>
+    
+    <button id="community-btn" type="button" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-4 rounded border shadow-md hover:from-indigo-700 dark:hover:bg-gray-700 hover:to-blue-600 dark:bg-none dark:bg-slate-700 transition-colors duration-300 cursor-pointer">Join Community</button>
+</div>
+  </main>
+
+
+
+  <!-- Why Engineering Section -->
+
+  <div class="p-18 mt-10 text-center bg-gray-50 dark:bg-gray-800   ronded">
+    <h1 class="fade1-effect font-bold text-gray-800 dark:text-gray-300 text-3xl flex justify-center mb-6 ">Why Engineering...</h1>
+    <p class="fade1-effect text-lg flext justify-center text-gray-700 dark:text-gray-400 ml-67 mr-67 ">Engineering is one of the most sought-after career paths in India, offering diverse opportunities for innovation, problem-solving, and professional growth.</p>
+
+
+    <div class="fade-effect flex space-x-14 mt-20">
+        <div class=" bg-white dark:bg-gray-900 dark:text-amber-50 p-4 rounded-2xl transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg duration-300 ">
+            <img src="doctoral-hat-8619555_1920.png "  alt="education" class="relative w-25 h-25  ml-38 mb-5 ">
+            <h1 class="font-bold dark:text-amber-50 text-gray-800">Quality Education</h1>
+            <p class="flex flex-wrap p-5 text-center">India has numerous prestigious engineering institutions offering world-class education and research facilities.</p>
+        </div>
+
+
+        <div class=" bg-white dark:bg-gray-900 dark:text-amber-50 p-3 rounded-2xl transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg duration-300">
+        <img src="https://www.taylortechnical.com/wp-content/uploads/2021/11/hire.png"  alt="education" class="relative w-31 h-30  ml-30 mb-1">
+            <h1 class="font-bold dark:text-amber-50 text-gray-800">Career Opportunities</h1>
+            <p class="flex flex-wrap p-5 text-center">Engineering graduates have access to diverse career paths across industries, both in India and globally.</p>
+        </div>
+
+        
+        <div class="fade-effect bg-white dark:text-amber-50 dark:bg-gray-900 p-4 rounded-2xl transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg duration-300">
+            <img src="innovation-line-gradient-circle-background-icon-vector-removebg-preview.png"  alt="education" class="relative w-25 h-25  ml-36 mb-5">
+            <h1 class="font-bold dark:text-amber-50 text-gray-800">Innovation & Impact</h1>
+            <p class="flex flex-wrap p-5 text-center">Engineers play a crucial role in technological advancement and solving real-world problems that impact society</p>
+        </div>
+
+    </div>
+  </div>
+
+     
+
+<!-- ENGINEERING BRANCHES SECTION -->
+
+
+<section id="branches" class="branches-section dark:bg-gray-800  " class="no-effect">
+  <div class="px-24 py-12">
+    
+    <h2 class="fade1-effect text-3xl font-bold text-gray-800  dark:text-gray-300 mb-6 text-center">Engineering Branches</h2>
+    <p class="fade1-effect text-md font-bold text-gray-600 dark:text-gray-500 text-center ">Branches of Knowledge, Roots of Progress
+      <hr class="fade1-effect border-t border-0 border-blue-600 my-2 mb-12 w-1/3 mx-auto">
+      
+  </p>
+
+  <p class="fade-effect text-md font-stretch-100% text-gray-600 dark:text-gray-500 text-center mb-16">Engineering spans diverse fields, from Computer Science and IT, which drive advancements in software, AI, and cybersecurity, to Mechanical and Civil Engineering, responsible for creating machines, infrastructure, and sustainable cities. Electrical and Electronics Engineering power the world through energy systems, communication networks, and smart technologies. Each discipline contributes to solving real-world challenges, pushing the boundaries of possibility, and transforming ideas into reality. Through continuous innovation, engineering remains at the heart of progress, building a smarter and more connected future.</p>
+  <p class="fade-effect text-md text-gray-400 text-center mb-0">Search for a branch in the input container or Click below to learn more </p>
+  <div class="fade-effect search-container mx-auto mt-4 my-12 dark:bg-gray-900 bg-white pl-6 pb-4 pr-6 pt-1 rounded-lg shadow-md Z-0 relative">
+    <label for="branch-input" class="absolute  text-center text-xl text-gray-600 duration-300 transform -translate-y-4 scale-85 top-2 z-10 origin-[0] dark:bg-gray-600 dark:text-gray-400 bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-9">Select Branch:</label>
+    <input list="branch-list" id="branch-input"  name="branch" placeholder="Type to search..." autocomplete="off" class="block  dark:text-gray-300 px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-500 bg-transparent rounded-lg border-1 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+    <datalist id="branch-list">
+      <option value="CSE">Computer Science & Engineering (CSE)</option>
+      <option value="ENTC">Electronics & Telecommunication (ENTC)</option>
+      <option value="CIVIL">Civil Engineering</option>
+      <option value="MECHANICAL">Mechanical Engineering</option>
+      <option value="AEROSPACE">Aerospace Engineering</option>
+    </datalist>
+  </div>
+  
+  <div class="branch-links  fade-effect flex flex-wrap justify-center gap-4 ">
+    <button class="branch-card bg-blue-500 dark:bg-neutral-700 cursor-pointer text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300 transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg " onclick="showBranchInfo('CSE')">Computer Science & Engineering (CSE)</button>
+    <button class="branch-card bg-blue-500 dark:bg-neutral-700 cursor-pointer text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300 transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg" onclick="showBranchInfo('ENTC')">Electronics & Telecommunication (ENTC)</button>
+    <button class="branch-card bg-blue-500 dark:bg-neutral-700 cursor-pointer text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300 transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg" onclick="showBranchInfo('CIVIL')">Civil Engineering</button>
+      <button class="branch-card bg-blue-500 dark:bg-neutral-700  cursor-pointer text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300 transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg" onclick="showBranchInfo('MECHANICAL')">Mechanical Engineering</button>
+      <button class="branch-card bg-blue-500 dark:bg-neutral-700 cursor-pointer text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300 transition-transform transform shadow-md hover:-translate-y-1 hover:shadow-lg" onclick="showBranchInfo('AEROSPACE')">Aerospace Engineering</button>
+    </div>
+  </div>
+    <div id="branch-info" class="branch-info mt-20 ml-0 mr-0 dark:text-gray-400 dark:bg-gray-800 pt-16  pb-16 bg-gray-100 rounded-lg" style="display: none;"></div>
+    <hr class="border-t border-0 border-blue-600 px-24 py-12 dark:border-gray-950 my-15 mb-16 w-full ">
+  </section>
+
+
+<!-- COMPARE ENGG Branches -->
+
+  <section id="compare" class="text-center dark:text-gray-400 dark:bg-gray-800">
+    <h1 class="fade1-effect font-bold text-center text-4xl text-gray-800 mb-6 dark:text-gray-300">Compare Engineering Branches</h1>
+    <p class="fade1-effect text-md font-bold text-gray-600 text-center mb-14">Not sure which branch to choose? Compare key aspects of different engineering disciplines to make an informed decision.</p>
+    
+
+    <div class="inline-block ">
+      <table class="fade-effect 
+    max-w-7xl w-7xl text-center ml-[30px] border-separate border-spacing-0 
+    border border-gray-200 rounded-t-2xl mb-30 
+    transition-all duration-1000 ease-in-out 
+    hover:scale-102 hover:shadow-2xl hover:delay-300">
+      <thead>
+        <tr class="bg-blue-500 dark:bg-gray-600 text-white">
+          <!-- Add rounded corners to first and last header cells -->
+          <th class="p-3 rounded-tl-2xl">Branch</th>
+          <th class="p-3">Avg Salary</th>
+          <th class="p-7 pl-11">Job Prospects</th>
+          <th class="p-3">Difficulty Level</th>
+          <th class="p-3 rounded-tr-2xl">Industry Growth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-3 py-7 border border-gray-200">Computer Science & Engineering</td>
+          <td class="p-3 py-7 border border-gray-200">₹6-20 LPA</td>
+          <td class="p-3 py-7 gap-4 flex border border-gray-200">
+            <div class="w-full bg-gray-100 rounded-full h-5">
+              <div class="bg-green-500 h-5 rounded-full" style="width: 100%;"></div>
+            </div>
+            Excellent
+          </td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          <td class="p-3 py-7 border border-gray-200">High</td>
+          
+            
+          </td>
+        </tr>
+        <!-- Electronics & Telecommunication (ENTC) -->
+        <tr>
+          <td class="p-3 py-7 border border-gray-200">Electronics & Telecommunication</td>
+          <td class="p-3 py-7 border border-gray-200">₹4-12 LPA</td>
+          <td class="p-3 py-7 gap-4 flex border border-gray-100">
+            <div class="w-full bg-gray-100 rounded-full h-5">
+              <div class="bg-blue-500 h-5 rounded-full" style="width: 75%;"></div>
+            </div>  
+          Good</td>
+          <td class="p-3 py-7 border border-gray-200">High</td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          
+            
+          </td>
+        </tr>
+         <!-- Civil Engineering -->
+         <tr>
+          <td class="p-3 py-7 border border-gray-200">Civil Engineering</td>
+          <td class="p-3 py-7 border border-gray-200">₹4-14 LPA</td>
+          <td class="p-3 py-7 gap-4 flex border border-gray-200">
+            <div class="w-full bg-gray-100 rounded-full h-5">
+              <div class="bg-blue-500 h-5 rounded-full" style="width: 75%;"></div>
+            </div>
+          Good</td>
+          <td class="p-3 py-7 border border-gray-200">High</td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          
+            
+          </td>
+        </tr>
+        <!-- Mechanical Engineering -->
+        <tr>
+          <td class="p-3 py-7 border border-gray-200">Mechanical Engineering</td>
+          <td class="p-3 py-7 border border-gray-200">₹3-10 LPA</td>
+          <td class="p-3 py-7 gap-4 flex border border-gray-200">
+            <div class="w-full bg-gray-100 rounded-full h-5">
+              <div class="bg-orange-500 h-5 rounded-full" style="width: 50%;"></div>
+            </div>  
+          Moderate</td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          
+            
+          </td>
+        </tr>
+        <!-- Aerospace Engineering -->
+        <tr>
+          <td class="p-3 py-7 border border-gray-200">Aerospace Engineering</td>
+          <td class="p-3 py-7 border border-gray-200">₹4-12 LPA</td>
+          <td class="p-3 py-7 gap-4 flex border border-gray-200">
+            <div class="w-full bg-gray-100 rounded-full h-5">
+              <div class="bg-blue-500 h-5 rounded-full" style="width: 75%;"></div>
+            </div>  
+          Good</td>
+          <td class="p-3 py-7 border border-gray-200">High</td>
+          <td class="p-3 py-7 border border-gray-200">Moderate</td>
+          
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+
+
+
+  <!-- SLIDER TOP COLLEGE  -->
+
+  <section id="" class="text-center dark:bg-gray-800 ">
+    <h1 class="fade1-effect font-bold text-center text-4xl text-gray-800 dark:text-gray-300 mb-6"> Find the Best Engineering College for YOU!</h1>
+    <p class="fade1-effect text-md font-bold text-gray-600 dark:text-gray-400 text-center mb-14">Stop guessing! Compare placements, fees, rankings, and more—all in one place. Your dream career is one click away!</p>
+
+
+<!-- Slider Section -->
+<section class="slider-section fade-effect relative h-[500px] mt-10">
+  <div class=" container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-full bg-gray-100 shadow-xl rounded-lg overflow-hidden">
+      <div class="slide relative h-full transition delay-100 duration-300 ease-in-out hover:shadow-2xl">
+          <!-- Slide 1 -->
+          <div class="item absolute delay-100 duration-300 ease-in-out hover:scale-105 top-0 left-0 w-full h-full" style="background-image: url('iit-delhi.jpg');">
+              <div class="content absolute top-1/2 left-10 w-80 text-left text-white -translate-y-1/2 opacity-100">
+                <div class="number absolute bottom-57 left-0  text-gray-800 dark:text-neutral-800 w-20 h-20  text-8xl opacity-75 font-bold">1</div>
+                  <div class="name text-3xl font-bold uppercase">IIT DELHI</div>
+                  <div class="des mt-2 mb-4">Innovate. Inspire. Transform</div>
+                  <button class="px-4 py-2 bg-blue-500 dark:bg-neutral-800 cursor-pointer text-white rounded hover:bg-blue-600" data-url="https://home.iitd.ac.in/">See More</button>
+              </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="item absolute delay-100 duration-300 ease-in-out hover:scale-105 top-1/2 -translate-y-1/2 w-48 h-72 rounded-lg shadow-lg" style="background-image: url('iit-bombay.jpg'); left: calc(50% - 24px);">
+            <div class="number absolute  top-2 left-2  text-gray-800 w-20 h-20  text-8xl opacity-75 dark:text-neutral-800 font-bold">2</div>
+              <div class="content absolute top-1/2 left-10 w-64 text-left text-gray-800 -translate-y-1/2 opacity-0">
+                  <div class="name text-3xl font-bold uppercase">IIT BOMBAY</div>
+                  <div class="des mt-2 mb-4">Jñānam paramam dhyeyam</div>
+                  <button class="px-4 py-2 bg-blue-500 dark:bg-neutral-800 cursor-pointer text-white rounded hover:bg-blue-600" data-url="https://www.iitb.ac.in/about">See More</button>
+              </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="item absolute delay-100 duration-300 ease-in-out hover:scale-105 top-1/2 -translate-y-1/2 w-48 h-72 rounded-lg shadow-lg" style="background-image: url('IIT-ROORKEE.jpeg'); left: calc(50% + 200px);">
+            <div class="number absolute top-2 left-2  text-gray-800 dark:text-neutral-800 w-20 h-20  text-8xl opacity-75 font-bold">3</div>
+              <div class="content absolute top-1/2 left-10 w-64 text-left text-white -translate-y-1/2 opacity-0">
+                  <div class="name text-3xl font-bold uppercase">IIT ROORKEE</div>
+                  <div class="des mt-2 mb-4">श्रमं विना न किमपि साध्यम्</div>
+                  <button class="px-4 py-2 bg-blue-500 dark:bg-neutral-800 cursor-pointer text-white rounded hover:bg-blue-600" data-url="https://example.com/australia">See More</button>
+              </div>
+      </div>
+
+      <!-- SLIDE 4  -->
+      <div class="item absolute delay-100 duration-300 ease-in-out hover:scale-105 top-1/2 -translate-y-1/2 w-48 h-72 rounded-lg shadow-lg" style="background-image: url('IIT-KHARAGPUR.jpg'); left: calc(50% + 200px);">
+        <div class="number absolute top-2 left-2  text-gray-800  dark:text-neutral-800w-20 h-20  text-8xl opacity-75 font-bold">4</div>
+          <div class="content absolute top-1/2 left-10 w-64 text-left text-white -translate-y-1/2 opacity-0">
+              <div class="name text-3xl font-bold uppercase">IIT KARAGPUR</div>
+              <div class="des mt-2 mb-4">Yoga Karmesu Kaushalam</div>
+              <button class="px-4 py-2 bg-blue-500 dark:bg-neutral-800 cursor-pointer text-white rounded hover:bg-blue-600" data-url="https://www.iitkgp.ac.in/about-iitkgp">See More</button>
+          </div>
+      </div>
+
+      <!-- SLIDE 5  -->
+      <div class="item absolute delay-100 duration-300 ease-in-out hover:scale-105 top-1/2 -translate-y-1/2 w-48 h-72 rounded-lg shadow-lg" style="background-image: url('ab0936f2879f4c84b4bb0c2d7a0bf696.avif'); left: calc(50% + 200px);">
+        <div class="number absolute top-2 left-2 text-gray-800 dark:text-neutral-800 w-20 h-20  text-8xl opacity-75 font-bold">5</div>
+          <div class="content absolute top-1/2 left-10 w-64 text-left text-white -translate-y-1/2 opacity-0">
+              <div class="name text-3xl font-bold uppercase">IIT GUWAHATI</div>
+              <div class="des mt-2 mb-4">Yoga Karmesu Kaushalam</div>
+              <button class="px-4 py-2 bg-blue-500 dark:bg-neutral-800 cursor-pointer text-white rounded hover:bg-blue-600" data-url="https://www.iitkgp.ac.in/about-iitkgp">See More</button>
+          </div>
+      </div>
+      <!-- Slider Buttons -->
+      <div class="button absolute z-50 bottom-5 w-full text-center">
+          <button class="prev z-50 w-10 h-10 bg-gray-200 dark:bg-neutral-600 rounded-full hover:bg-gray-300 mx-2 ">
+              <i class="fas fa-arrow-left dark:text-gray-300"></i>
+          </button>
+          <!-- <button class="next w-10 h-10 bg-gray-200 rounded-full hover:bg-gray-300 mx-2">
+              <i class="fas fa-arrow-right"></i>
+          </button> -->
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- JOIN CUMMUNITY -->
+<div id="join" class="fixed right-5 bottom-10 backdrop-blur-lg bg-blue-700/50 z-10 h-14 w-14 flex items-center justify-center rounded-full shadow-md cursor-pointer hover:bg-blue-700/60 hover:-translate-y-0.5  shadow-gray-900 " >JOIN
+</div>
+
+<div id="box" class="hidden fixed right-1/3 w-lg z-50 top-1/3 ">
+  
+  <nav id="nav" class=" relative   z-50   p-4 bg-blue-900 rounded-lg shadow-lg">
+    <div id="nav-btn" class="grid grid-flow-col grid-rows-1 gap-4">
+      <a id="nav-guid" target="_blank" class="text-white hover:underline-offset-4 font-bold text-lg cursor-pointer  transition-all duration-300">Guidance</a>
+      <a id="nav-com" target="_blank" class="text-white hover:underline-offset-4 font-bold text-lg cursor-pointer  transition-all duration-300">Community</a>
+    </div>
+  </nav>
+  
+  <div id="guid" class="bg-blue-400/40 backdrop-blur-lg rounded-b-lg">
+
+      <div id="chat"class="mb-1 mt-1 min-h-40 mx-0"></div>
+
+      <input type="text" class="mb-4 w-80 ml-10 mr-3 pl-2 p-2 mt-4 bg-blue-300 rounded shadow-lg" id="userInput" placeholder="Say something . . .">
+      <button class="bg-blue-300 hover:bg-blue-400 p-2 rounded shadow-lg" onclick="sendMessage()">Send</button>
+ 
+  </input>
+
+  </div>
+
+
+
+  <div id="com" class="Com bg-blue-500/40 backdrop-blur-lg rounded-b-lg p-4">
+    <div class="text-3xl text-neutral-700 dark:text-neutral-300">Engi_Portal</div>
+
+<!-- Chat Container -->
+<div id="chat2" class="text-4xl mb-1 min-h-40 mx-0 flex flex-col gap-1">
+
+  <!-- Question -->
+  <div class="message user text-sm">
+      <span class="text-sm font-bold">Amit</span>
+      <div class="text-lg">Do web developers really need AI?</div>
+  </div>
+
+  <div class="message text-sm">
+      <span class="font-bold">Raj</span>
+      <div class="text-sm">Yes. AI won’t replace web dev, but it’s automating boring stuff. Learn AI tools or get left behind.</div>
+  </div>
+
+  <div class="message text-sm">
+      <span class="font-bold">Aditi</span>
+      <div class="text-sm">Web dev is fine, but AI is speeding it up. If you ignore it, juniors using AI will outpace you.</div>
+  </div>
+
+</div>
+
+
+
+
+    <!-- Input and Button -->
+    <div class="flex gap-2 mt-4 justify-center">
+        <input type="text" class="w-80 shadow-lg pl-2 p-2 bg-blue-300 rounded" id="userInput" placeholder="Discuss something...">
+        <button class="bg-blue-300 hover:bg-blue-400 shadow-lg p-2 rounded" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+    
+    <!-- footer  -->
+    
+
+<footer class="fade-effect bg-blue-600  dark:bg-slate-900 mb-7 rounded-lg shadow-sm m-4 mt-20">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-100 sm:text-center ">© 2025 <a href="https://flowbite.com/" class="hover:underline">Engg_Portal</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-100  sm:mt-0">
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">About</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline">Contact</a>
+      </li>
+  </ul>
+  </div>
+</footer>
+
+    <script defer src="Portal.js"></script>
+</body>
+</html>
+
